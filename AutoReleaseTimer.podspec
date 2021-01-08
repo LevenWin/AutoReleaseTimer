@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "AutoReleaseTimer"
-  spec.version      = "1.0"
+  spec.version      = "1.1"
   spec.summary      = "attach Timer functions to an object, and auto release when the object de"
 
   # This description is used to generate tags and improve search results.
