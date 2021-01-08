@@ -35,7 +35,7 @@ extension Timerable {
     func schedule(_ time: TimeInterval, ifRepeat: Bool, invoke: @escaping ((Timer) -> Void)) -> Timer {
         let deallocToken = DeallocToken(invoke: invoke)
         let timer = Timer.init(timeInterval: time, target: deallocToken, selector: #selector(DeallocToken.invokeAction), userInfo: nil, repeats: ifRepeat)
-        RunLoop.current.add(timer, forMode: RunLoopMode.commonModes)
+        RunLoop.current.add(timer, forMode: RunLoop.Mode.commonModes)
         deallocToken.timer = timer
         objc_setAssociatedObject(self, &scheduleTimerKey, deallocToken, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         return timer
