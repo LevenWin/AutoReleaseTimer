@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
   #  CocoaPods will detect a license file if there is a named LICENSE*
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
-  spec.swift_versions = "4.0"
+  spec.swift_versions = "5.0"
   spec.license      = "MIT"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
