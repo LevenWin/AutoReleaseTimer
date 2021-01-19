@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "AutoReleaseTimer"
-  spec.version      = "1.1"
+  spec.version      = "1.2"
   spec.summary      = "Auto-Release-Timer"
 
   # This description is used to generate tags and improve search results.
